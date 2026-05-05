@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>&#28779;&#26612;&#20154;&#22823;&#20316;&#25112;&#65306;&#26417;&#38543;&#23433;</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="topbar" aria-label="game status">
+      <div>
+        <p class="kicker">NEON STICKMAN OPS</p>
+        <h1>&#28779;&#26612;&#20154;&#22823;&#20316;&#25112;</h1>
+      </div>
+      <div class="hero-id">
+        <div class="plumber-avatar" aria-hidden="true">
+          <span class="cap"></span>
+          <span class="face"></span>
+          <span class="body"></span>
+        </div>
+        <div>
+          <span>&#35282;&#33394;</span>
+          <strong>&#26417;&#38543;&#23433;</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="stage-wrap">
+      <canvas id="game" width="1280" height="720" aria-label="stickman battle game"></canvas>
+      <div id="overlay" class="overlay">
+        <div class="panel">
+          <p class="kicker">&#38383;&#20851; / &#38519;&#38449; / &#20914;&#21050;</p>
+          <h2>&#26417;&#38543;&#23433;&#31361;&#20837;&#38675;&#34425;&#38519;&#38449;&#22330;</h2>
+          <p>&#36991;&#24320;&#23574;&#21050;&#12289;&#28608;&#20809;&#21644;&#24033;&#36923;&#26080;&#20154;&#26426;&#65292;&#21040;&#36798;&#27599;&#20851;&#21491;&#20391;&#30340;&#33021;&#37327;&#38376;&#12290;&#28857;&#20987;&#24320;&#22987;&#21518;&#20250;&#25773;&#25918;&#28608;&#28872;&#25112;&#26007;&#38899;&#20048;&#12290;</p>
+          <button id="startBtn" type="button">&#24320;&#22987;&#20316;&#25112;</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="hud">
+      <div><span>&#31227;&#21160;</span><b>A/D &#25110; &larr;/&rarr;</b></div>
+      <div><span>&#36339;&#36291;</span><b>W / &uarr; / &#31354;&#26684;</b></div>
+      <div><span>&#20914;&#21050;</span><b>Shift</b></div>
+      <div><span>&#25915;&#20987;</span><b>J</b></div>
+      <button id="musicBtn" type="button" aria-pressed="true">&#38899;&#20048;&#65306;&#24320;</button>
+    </section>
+  </main>
+
+  <audio id="music" src="https://opengameart.org/sites/default/files/jrpg_battle_loop.mp3" preload="auto" loop></audio>
+  <script src="game.js"></script>
+</body>
+</html>
